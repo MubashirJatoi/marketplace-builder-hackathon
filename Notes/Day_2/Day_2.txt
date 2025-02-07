@@ -1,0 +1,41 @@
+*Key Workflows and Step-by-Step Interactions*
+
+1. User Browses Products
+
+    Step 1: User navigates to the homepage or product catalog on the Frontend (built with Next.js).
+    Step 2: The Frontend sends a request to the Product Data API (powered by Sanity CMS).
+    Step 3: The Product Data API fetches product data from Sanity CMS and returns it to the Frontend.
+    Step 4: The Frontend dynamically displays product listings to the user.
+
+
+2. User Adds Products to Cart
+
+    Step 1: User selects a product and clicks the "Add to Cart" button on the Frontend.
+    Step 2: The Frontend updates the cart state locally or in a database (depending on implementation).
+    Step 3: Cart data is either stored in the user's session (locally) or synced with Sanity CMS for logged-in users.
+
+
+3. User Proceeds to Checkout and Places an Order
+
+    Step 1: User clicks on "Checkout" and reviews their cart on the Frontend.
+    Step 2: The Frontend collects order details, including selected products, user information, and shipping details.
+    Step 3: An API request is sent to Sanity CMS to save the order details.
+    Step 4: Sanity CMS stores the order information for further processing.
+
+
+4. Payment Processing
+
+    Step 1: User proceeds to payment by selecting a method (e.g., credit card, PayPal) on the Frontend.
+    Step 2: Payment information is securely sent to the Payment Gateway via an API.
+    Step 3: The Payment Gateway processes the transaction and sends a confirmation response.
+    Step 4: The Frontend displays the payment confirmation to the user and records the status in Sanity CMS.
+
+
+5. Shipment Tracking
+
+    Step 1: After the order is placed, shipment tracking details are generated.
+    Step 2: The Frontend sends a request to a Third-Party API for real-time shipment tracking updates.
+    Step 3: The Third-Party API responds with tracking data (e.g., current status, estimated delivery).
+    Step 4: The Frontend displays the tracking information to the user in their account or via a notification system.
+
+

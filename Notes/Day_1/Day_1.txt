@@ -1,0 +1,64 @@
+Question: What type of marketplace are you building?
+Answer: General e-commerce.
+
+
+
+*General e-cmmerce marketplace*
+
+    [Product Categories]
+        1. Clothing
+        2. Electronics
+        3. Shoes
+    
+    [Target Audience]
+        1. Global customers
+        2. All age groups
+        3. Online shoppers
+
+    [Key Features]
+        1. Product Catalog
+        2. Secure payment system
+        3. Order tracking
+
+
+
+
+Define Your Bussiness Goals 
+
+Question/Answers
+
+Question 1:  What problem does your marketplace solve?
+Answer: Customer struggle to find affordable.. authenti Nike shoes online.
+
+Question 2: Who is your target audience?
+Answer: Young adults and sports enthusiasts.
+
+Question 3: What products/services will you offer?
+Answer: Variety of Nike shoes (sports, casual, running).
+
+Question 4: What  makes your marketplace unique?
+Answer: 100% authentic products, fast delivery, and exclusive discounts.
+
+Question 5: What is your business outcome?
+Answer: Build customer trust and achieve high sales.
+
+
+
+
+Create a Data Schema
+
+Question: What are the main entities and their relationship?
+Answer: Products, Orders, and Customers, with clear connections.
+
+
+[Product]
+   -Id
+   -Name
+   -Price
+   -Stock
+      |
+      |
+    [Order]--------------------->[Customer]
+    -Order Id                    -Customer
+    -Product Id                  -Name
+    -Quantity                    --Contact Info

@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    /* Remove spinner arrows for number inputs */
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number']::-webkit-outer-spin-button {
+      @apply appearance-none;
+      margin: 0;
+    }
+
+    input[type='number'] {
+        @apply focus:outline-none; /* Optional: Remove outline for better styling */
+        -moz-appearance: textfield; /* For Firefox */
+      }
+}
