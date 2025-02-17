@@ -57,7 +57,7 @@ function Navbar() {
           <Link href={"#"} className="cursor-pointer hover:underline">SNKRS</Link>
         </div>
         {/* Menu Items - Hidden on Mobile */}
-        <div className={`md:hidden text-[15px] mt-[60px] bg-black text-white p-10 font-[600] gap-10 w-[100%] absolute top-10 left-0 z-10 ${menuOpen ? 'block' : 'hidden'}`}>
+        <div className={`md:hidden flex flex-col text-[15px] mt-[60px] bg-black text-white p-10 font-[600] gap-3 w-[100%] absolute top-10 left-0 z-10 ${menuOpen ? 'block' : 'hidden'}`}>
                     <Link href={"#"} className="cursor-pointer hover:underline">New & Featured</Link>
                     <Link href={"#"} className="cursor-pointer hover:underline">Men</Link>
                     <Link href={"#"} className="cursor-pointer hover:underline">Women</Link>
