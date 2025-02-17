@@ -11,7 +11,7 @@ function Footer() {
         <div className="bg-[#111111] h-auto pb-4">
             <div className="w-[90%] m-auto">
                 <div className="grid grid-cols-2 gap-6 md:grid-cols-4 justify-center pt-[30px] pl-[30px]">
-                    <div className="text-[11px] text-[#FFFFFF] font-[500] leading-[32.67px]">
+                    <div className="text-[11px] text-[#FFFFFF] font-[500] leading-[28px] md:leading-[32.67px]">
                         <p className="cursor-pointer hover:text-[#7E7E7E]">Find A Store</p>
                         <Link href={"/joinUs"}>
                         <p className="cursor-pointer hover:text-[#7E7E7E]">Become A Member</p>
@@ -22,7 +22,14 @@ function Footer() {
                         <p className="cursor-pointer hover:text-[#7E7E7E]">Send Us Feedback</p>
                         <p className="cursor-pointer hover:text-[#7E7E7E]">Student Discounts</p>
                     </div>
-                    <div className="text-[11px] font-[400] text-[#7E7E7E] leading-[28px]">
+                    <div className="text-[#7E7E7E] text-[11px] leading-[28px]">
+                        <p className="text-[#FFFFFF] text-[11px] font-[500]">About Nike</p>
+                        <p className="cursor-pointer hover:text-[#FFFFFF]">News</p>
+                        <p className="cursor-pointer hover:text-[#FFFFFF]">Careers</p>
+                        <p className="cursor-pointer hover:text-[#FFFFFF]">Investors</p>
+                        <p className="cursor-pointer hover:text-[#FFFFFF]">Sustainability</p>
+                    </div>
+                    <div className="text-[11px] font-[400] text-[#7E7E7E] leading-[28px] w-[15rem] md:w-auto">
                         <p className="text-[#FFFFFF] text-[11px] font-[500]">Get Help</p>
                         <Link href={"/order"}>
                             <p className="cursor-pointer hover:text-[#FFFFFF]">Order Status</p>
@@ -37,22 +44,16 @@ function Footer() {
                         <p className="cursor-pointer hover:text-[#FFFFFF]">Contact Us On Nike.com Inquiries</p>
                         <p className="cursor-pointer hover:text-[#FFFFFF]">Contact Us On All Other Inquiries</p>
                     </div>
-                    <div className="text-[#7E7E7E] text-[12px] leading-[28px]">
-                        <p className="text-[#FFFFFF] text-[11px] font-[500]">About Nike</p>
-                        <p className="cursor-pointer hover:text-[#FFFFFF]">News</p>
-                        <p className="cursor-pointer hover:text-[#FFFFFF]">Careers</p>
-                        <p className="cursor-pointer hover:text-[#FFFFFF]">Investors</p>
-                        <p className="cursor-pointer hover:text-[#FFFFFF]">Sustainability</p>
-                    </div>
                 </div>
-                <div className="flex gap-3 justify-end relative bottom-[120px] md:bottom-[190px] md:right-[30px]">
+            </div>
+            <div className="flex gap-3 justify-end relative bottom-[120px] md:bottom-[190px] mt-[10rem] md:mt-[0rem] right-[7rem] md:right-[90px]">
                     <Image className="cursor-pointer transition-transform duration-[0.3s] ease-in-out hover:transform hover:scale-105" src={Twitter} alt="twitter"></Image>
                     <Image className="cursor-pointer transition-transform duration-[0.3s] ease-in-out hover:transform hover:scale-105" src={Facebook} alt="facebook"></Image>
                     <Image className="cursor-pointer transition-transform duration-[0.3s] ease-in-out hover:transform hover:scale-105" src={Youtube} alt="youtube"></Image>
                     <Image className="cursor-pointer transition-transform duration-[0.3s] ease-in-out hover:transform hover:scale-105" src={Instagram} alt="instagram"></Image>
                 </div>
-            </div>
-            <div className="flex flex-col md:flex-row justify-between w-[95%] m-auto">
+            
+            <div className="flex flex-col md:flex-row justify-between w-[95%] m-auto mt-[-5.5rem] md:mt-[0rem]">
                 <div className="flex gap-10 justify-center">
                     <div className="flex gap-2">
                     <Link href={"/location"}>

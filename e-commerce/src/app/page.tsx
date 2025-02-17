@@ -191,23 +191,23 @@ export default function Home() {
         </div>
         <div className="w-[92%] mt-[40px] md:mt-[80px] m-auto">
           <h3 className="text-[23px] font-[600] mb-[20px]">The Essentials</h3>
-          <div className="flex gap-3">
+          <div className="flex flex-col md:flex-row gap-3">
             <div className=" transition-transform duration-[0.3s] ease-in-out hover:transform hover:scale-105">
             <Link href={"/shop"}>
               <Image src={Pic1} alt="pic1"></Image>
-              <button className="bg-white text-black w-[45px] md:w-[85.19px] text-[10px] md:text-[15px] h-[20px] md:h-[39px] rounded-[30px] relative bottom-[80px] left-[45px]">Men&apos;s</button>
+              <button className="bg-white text-black w-[85.19px] text-[15px] h-[39px] rounded-[30px] relative bottom-[80px] left-[45px]">Men&apos;s</button>
               </Link>
             </div>
             <div className=" transition-transform duration-[0.3s] ease-in-out hover:transform hover:scale-105">
             <Link href={"/shop"}>
               <Image src={Pic2} alt="pic2"></Image>
-              <button className="bg-white text-black w-[50px] md:w-[85.19px] text-[10px] md:text-[15px] h-[20px] md:h-[39px] rounded-[30px] relative bottom-[80px] left-[45px]">Women&apos;s</button>
+              <button className="bg-white text-black w-[85.19px] text-[15px] h-[39px] rounded-[30px] relative bottom-[80px] left-[45px]">Women&apos;s</button>
               </Link>
             </div>
             <div className=" transition-transform duration-[0.3s] ease-in-out hover:transform hover:scale-105">
             <Link href={"/shop"}>
               <Image src={Pic3} alt="pic3"></Image>
-              <button className="bg-white text-black w-[45px] md:w-[85.19px] text-[10px] md:text-[15px] h-[20px] md:h-[39px] rounded-[30px] relative bottom-[80px] left-[45px]">Kid&apos;s</button>
+              <button className="bg-white text-black w-[85.19px] text-[15px] h-[39px] rounded-[30px] relative bottom-[80px] left-[45px]">Kid&apos;s</button>
               </Link>
             </div>
           </div>
