@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function Order () {
     return(
-        <div className="flex justify-center mb-[200px] mt-[100px]">
+        <div className="flex justify-center mb-[100px] md:mb-[200px] mt-[50px] md:mt-[100px]">
             <div className="w-[304px]">
                 <h3 className="w-[246.65px] h-[22px] text-[#111111] text-center ml-[30px] text-[19px] mb-[10px] font-[600] leading-[24px]">View or Manage Your Order</h3>
                 <p className="w-[281.12px] h-[56px] text-[14px] text-center ml-[10px] mb-[30px] leading-[20px]">To check the status of your order, or to start a return, please enter your order number and email address.</p>

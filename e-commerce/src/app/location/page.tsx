@@ -5,15 +5,15 @@ import Filoter from "../../../public/Images/filoter.png"
 
 function Location () {
     return(
-        <div className="flex">
-            <div className="w-[480px] ml-[20px] mt-[20px]">
+        <div className="flex md:flex-row flex-col gap-6 md:gap-0 mb-[80px] md:mb-[0px]">
+            <div className="md:w-[480px] px-3 md:px-0 md:ml-[20px] mt-[20px]">
                 <h3 className="text-[27px] leading-[32px] mb-[20px] font-[600]">Find a Nike Store</h3>
                 <div>
-                    <input className="w-[416px] h-[56px] text-[15px] pl-[40px] leading-[24px] text-[#757575] border border-[#757575] rounded-[8px] " type="text" placeholder="Search Location"/>
-                    <Image className="cursor-pointer relative bottom-9 left-3" src={Searrch} alt="searrch"></Image>
+                    <input className="w-[100%] md:w-[416px] h-[40px] md:h-[56px] text-[15px] pl-[40px] leading-[24px] text-[#757575] border border-[#757575] rounded-[8px] " type="text" placeholder="Search Location"/>
+                    <Image className="cursor-pointer relative bottom-7 md:bottom-9 left-3" src={Searrch} alt="searrch"></Image>
                 </div>
                 <div className="flex justify-between mb-[10px] items-center">
-                    <p className="text-[#757575] text-[14px] ">15 Stores Near You</p>
+                    <p className="text-[#757575] text-[15px] md:text-[14px] ">15 Stores Near You</p>
                     <div className="flex justify-center cursor-pointer items-center gap-2 w-[110.56px] mr-[28px] h-[39px] rounded-[30px] border border-[#CCCCCC]">
                         <p className="text-[#111111] text-[15px]">Filter</p>
                         <Image className="mt-[2px]" src={Filoter} alt="filoter"></Image>

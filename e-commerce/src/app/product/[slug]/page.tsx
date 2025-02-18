@@ -36,17 +36,17 @@ export default async function ProductPage({params} : ProductPageProps) {
     const product = await  getProduct(slug)
 
     return(
-        <div className="mt-[120px] mb-[250px]">
-            <div className="flex gap-[100px] w-[90%] m-auto">
+        <div className="mt-[30px] md:mt-[70px] mb-[100px] md:mb-[200px]">
+            <div className="flex flex-col md:flex-row gap-[50px] md:gap-[100px] w-[90%] m-auto">
                 <div>
                 {product.image && (
                     <Image src={urlFor(product.image).url()} alt="image" width={653} height={653}></Image>
                 )}
                 </div>
                 <div>
-                    <h1 className="text-[48px] mb-[60px] w-[367px] h-[96px] leading-[48px] text-left text-[#111111]">{product.productName}</h1>
-                    <p className="w-[374.92px] mb-[50px] text-[15px] leading-[28px] text-[#111111] text-left">{product.description}</p>
-                    <h3 className="w-[229px] mb-[30px] h-[34px] text-[36px] leading-[28px] text-[#111111] text-left">₹ {product.price}</h3>
+                    <h1 className="text-[30px] md:text-[48px] md:mb-[60px] md:w-[367px] md:h-[96px] md:leading-[48px] text-left text-[#111111]">{product.productName}</h1>
+                    <p className="w-[100%] px-2 md:px-0 md:w-[374.92px] mb-[20px] md:mb-[50px] text-[13px] md:text-[15px] md:leading-[28px] text-[#111111] text-left">{product.description}</p>
+                    <h3 className="md:w-[229px] mb-[10px] md:mb-[30px] md:h-[34px] text-[20px] md:text-[36px] md:leading-[28px] text-[#111111] text-left">₹ {product.price}</h3>
                     <AddToCartButton product={product} />
                 </div>
             </div>

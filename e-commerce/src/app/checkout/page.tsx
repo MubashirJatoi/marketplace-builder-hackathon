@@ -150,13 +150,13 @@ const Checkout = () => {
           </nav>
         </div>
       </div>
-    <div className="flex w-[70%] m-auto gap-[120px] mt-[50px]  mb-[200px]">
-        <div className="w-[440px] ml-[100px]">
+    <div className="flex flex-col-reverse md:flex-row w-[80%] md:w-[70%] m-auto gap-[60px] md:gap-[80px] mt-[30px] md:mt-[50px] mb-[100px] md:mb-[200px]">
+        <div className="w-[100%] md:w-[440px] md:ml-[100px]">
             <div className="mb-[20px]">
                 <p className="text-[21px] leading-[24px] text-[#111111] mb-[10px]">How would you like to get your order?</p>
                 <p className="text-[15px] leading-[24px] text-[#757575]">Customs regulation for India require a copy of the recipient's KYC. The address on the KYC needs to match the shipping address. Our courier will contact you via SMS/email to obtain a copy of your KYC. The KYC will be stored securely and used solely for the purpose of clearing customs (including sharing it with customs officials) for all orders and returns. If your KYC does not match your shipping address, please click the link for more information. <span className="underline hover:no-underline cursor-pointer">Learn More</span></p>
             </div>
-            <div className="flex items-center mb-[40px] pl-[20px] gap-[20px] rounded-[12px] border-2 w-[440px] h-[82px] border-[#111111]">
+            <div className="flex items-center mb-[40px] pl-[20px] gap-[20px] rounded-[12px] border-2 w-[100%] md:w-[440px] h-[60px] md:h-[82px] border-[#111111]">
                 <Image src={deliver} alt="deliver" />
                 <p className="text-[15px] leading-[24px] text-[#111111]">Deliver It</p>
             </div>
@@ -164,7 +164,7 @@ const Checkout = () => {
                 <form action="#">
                     <p className="text-[21px] mb-[20px] leading-[24px] text-[#111111]">Enter your  name and address:</p>
                     <div>
-                    <input className="w-[440px] h-[56px] rounded-[4px] border border-[#CCCCCC] text-[16px] leading-[24px] text-[#000000] placeholder:text-[#000000] py-[16px] pl-[16px]" type="text" placeholder="First Name" name="firstName" id="firstName" value={formValues.firstName} onChange={handleInputChange} />
+                    <input className="w-[100%] md:w-[440px] h-[40px] md:h-[56px] rounded-[4px] border border-[#CCCCCC] text-[15px] md:text-[16px] leading-[24px] text-[#000000] placeholder:text-[#000000] py-[16px] pl-[16px]" type="text" placeholder="First Name" name="firstName" id="firstName" value={formValues.firstName} onChange={handleInputChange} />
                     {formErrors.firstName && (
                   <p className="text-sm text-red-500">
                     First name is required.
@@ -172,7 +172,7 @@ const Checkout = () => {
                 )}
                 </div>
                 <div>
-                    <input className=" mt-[20px] w-[440px] h-[56px] rounded-[4px] border border-[#CCCCCC] text-[16px] leading-[24px] text-[#000000] placeholder:text-[#000000] py-[16px] pl-[16px]" type="text" placeholder="Last Name" name="lastName" id="lastName" value={formValues.lastName}
+                    <input className=" mt-[20px] w-[100%] md:w-[440px] h-[40px] md:h-[56px] rounded-[4px] border border-[#CCCCCC] text-[15px] md:text-[16px] leading-[24px] text-[#000000] placeholder:text-[#000000] py-[16px] pl-[16px]" type="text" placeholder="Last Name" name="lastName" id="lastName" value={formValues.lastName}
                   onChange={handleInputChange} />
                   {formErrors.lastName && (
                   <p className="text-sm text-red-500">
@@ -181,23 +181,23 @@ const Checkout = () => {
                 )}
                 </div>
                 <div>
-                    <input className="w-[440px] mt-[20px] h-[56px] rounded-[4px] border border-[#CCCCCC] text-[16px] leading-[24px] text-[#000000] placeholder:text-[#000000] py-[16px] pl-[16px]" type="text" placeholder="Address" id="address" name="address" value={formValues.address}
+                    <input className="w-[100%] md:w-[440px] mt-[20px] h-[40px] md:h-[56px] rounded-[4px] border border-[#CCCCCC] text-[15px] md:text-[16px] leading-[24px] text-[#000000] placeholder:text-[#000000] py-[16px] pl-[16px]" type="text" placeholder="Address" id="address" name="address" value={formValues.address}
                 onChange={handleInputChange} />
                 {formErrors.address && (
                 <p className="text-sm text-red-500">Address is required.</p>
               )}
               </div>
                     <p className="text-[11px] leading-[24px] text-[#757575] mb-[15px] ml-[16px] mt-[-3px]">We do not ship to P.O. boxes</p>
-                    <div className="grid grid-cols-2 gap-[20px] mb-[25px]">
+                    <div className="w-[100%] wmd:w-auto grid grid-cols-2 gap-[20px] mb-[25px]">
                         <div>
-                        <input className="w-[211.19] h-[56px] rounded-[4px] border border-[#CCCCCC] text-[16px] leading-[24px] text-[#000000] placeholder:text-[#000000] py-[16px] pl-[16px]" type="text" placeholder="Postal Code" id="postalCode" name="postalCode" value={formValues.postalCode}
+                        <input className="w-[100%] md:w-[211.19] h-[40px] md:h-[56px] rounded-[4px] border border-[#CCCCCC] text-[15px] md:text-[16px] leading-[24px] text-[#000000] placeholder:text-[#000000] py-[16px] pl-[16px]" type="text" placeholder="Postal Code" id="postalCode" name="postalCode" value={formValues.postalCode}
                 onChange={handleInputChange} />
                 {formErrors.postalCode && (
                 <p className="text-sm text-red-500">Postal Code is required.</p>
               )}
               </div>
               <div>
-                        <input className="w-[211.19] h-[56px] rounded-[4px] border border-[#CCCCCC] text-[16px] leading-[24px] text-[#000000] placeholder:text-[#000000] py-[16px] pl-[16px]" type="text" placeholder="City" id="city" name="city" value={formValues.city}
+                        <input className="w-[100%] md:w-[211.19] h-[40px] md:h-[56px] rounded-[4px] border border-[#CCCCCC] text-[15px] md:text-[16px] leading-[24px] text-[#000000] placeholder:text-[#000000] py-[16px] pl-[16px]" type="text" placeholder="City" id="city" name="city" value={formValues.city}
                 onChange={handleInputChange} />
                 {formErrors.city && (
                 <p className="text-sm text-red-500">City is required.</p>
@@ -205,9 +205,9 @@ const Checkout = () => {
               </div>
                     </div>
                         
-                        <h3 className="text-[21px] mb-[20px] leading-[24px] text-[#111111]">What's your contact information?</h3>
+                        <h3 className="text-[19px] md:text-[21px] mb-[20px] leading-[24px] text-[#111111]">What's your contact information?</h3>
                         <div>
-                        <input className="w-[440px] h-[56px] rounded-[4px] border border-[#CCCCCC] text-[16px] leading-[24px] text-[#000000] placeholder:text-[#000000] py-[16px] pl-[16px]" type="email" placeholder="Email" id="email" name="email" value={formValues.email}
+                        <input className="w-[100%] md:w-[440px] h-[40px] md:h-[56px] rounded-[4px] border border-[#CCCCCC] text-[15px] md:text-[16px] leading-[24px] text-[#000000] placeholder:text-[#000000] py-[16px] pl-[16px]" type="email" placeholder="Email" id="email" name="email" value={formValues.email}
                 onChange={handleInputChange} />
                 {formErrors.email && (
                 <p className="text-sm text-red-500">Email is required.</p>
@@ -215,24 +215,24 @@ const Checkout = () => {
               </div>
                         <p className="text-[11px] leading-[24px] text-[#757575] mb-[15px] ml-[16px] mt-[-3px]">A confirmation email will be sent after checkout.</p>
                         <div>
-                        <input className="w-[440px] h-[56px] rounded-[4px] border border-[#CCCCCC] text-[16px] leading-[24px] text-[#000000] placeholder:text-[#000000] py-[16px] pl-[16px] " type="number" placeholder="Phone Number" id="phone" name="phone" value={formValues.phone}
+                        <input className="w-[100%] md:w-[440px] h-[40px] md:h-[56px] rounded-[4px] border border-[#CCCCCC] text-[15px] md:text-[16px] leading-[24px] text-[#000000] placeholder:text-[#000000] py-[16px] pl-[16px] " type="number" placeholder="Phone Number" id="phone" name="phone" value={formValues.phone}
                 onChange={handleInputChange} />
                 {formErrors.phone && (
                 <p className="text-sm text-red-500">Phone is required.</p>
               )}
               </div>
                         <p className="text-[11px] leading-[24px] text-[#757575] mb-[30px] ml-[16px] mt-[-3px]">A carrier might contact you to confirm delivery.</p>
-                        <button onClick={handlePlaceOrder} className="w-[440px] mb-[30px] h-[60px] rounded-[30px] hover:bg-[#757575] hover:text-[#CCCCCC] active:bg-[black]  active:text-[white] bg-[#CCCCCC] text-[#757575] ">Continue</button>
+                        <button onClick={handlePlaceOrder} className="w-[100%] md:w-[440px] mb-[30px] h-[50px] md:h-[60px] rounded-[30px] hover:bg-[#757575] hover:text-[#CCCCCC] active:bg-[black]  active:text-[white] bg-[#CCCCCC] text-[#757575] ">Continue</button>
                 </form>
                 <div>
-                    <div className="pt-[21px] pb-[12px] mb-[18px] text-[20px] leading-[24px] text-[#111111] border-t-[1px] border-[#E5E5E5]">Delivery</div>
-                    <div className="pt-[21px] pb-[4px] mb-[18px] text-[21px] leading-[24px] text-[#757575] border-t-[1px] border-[#E5E5E5]">Shipping</div>
-                    <div className="pt-[21px] pb-[4px] mb-[18px] text-[21px] leading-[24px] text-[#757575] border-t-[1px] border-[#E5E5E5]">Billing</div>
-                    <div className="pt-[21px] pb-[4px] text-[21px] leading-[24px] text-[#757575] border-t-[1px] border-[#E5E5E5]">Payment</div>
+                    <div className="pt-[21px] pb-[12px] mb-[18px] text-[18px] md:text-[21px] leading-[24px] text-[#111111] border-t-[1px] border-[#E5E5E5]">Delivery</div>
+                    <div className="pt-[21px] pb-[4px] mb-[18px] text-[18px] md:text-[21px] leading-[24px] text-[#757575] border-t-[1px] border-[#E5E5E5]">Shipping</div>
+                    <div className="pt-[21px] pb-[4px] mb-[18px] text-[18px] md:text-[21px] leading-[24px] text-[#757575] border-t-[1px] border-[#E5E5E5]">Billing</div>
+                    <div className="pt-[21px] pb-[4px] text-[18px] md:text-[21px] leading-[24px] text-[#757575] border-t-[1px] border-[#E5E5E5]">Payment</div>
                 </div>
             </div>
         </div>
-        <div className="w-[320px]">
+        <div className="w-[100%] md:w-[350px]">
             <h3 className="text-[21px] leading-[24px] text-[#111111] mb-[15px]">Order Summary</h3>
             <div>
                 <div className="flex justify-between mb-[15px]">
@@ -251,14 +251,14 @@ const Checkout = () => {
                 <h4 className="text-[15px] font-bold leading-[24px] text-[#111111] mb-[10px]">Arrives Mon, 27 Mar - Wed, 12 Apr</h4>
                 {cartItems.length > 0 ? (
                 cartItems.map((item) => (
-                <div key={item._id} className="flex justify-between mb-[20px]">
+                <div key={item._id} className="flex gap-2 justify-between mb-[20px]">
                     {item.image && (
-                        <Image src={urlFor(item.image).url()} alt="image" width={208} height={208}></Image>
+                        <Image src={urlFor(item.image).url()} alt="image" width={150} height={150}></Image>
                     )}
                     <div>
-                        <p className="text-[13px] leading-[24px] text-[#111111] mb-[10px]">{item.productName}</p>
-                        <p className="text-[13px] leading-[19.6px] text-[#8D8D8D]  mb-[5px]">Qty {item.inventory}</p>
-                        <p className="text-[13px] leading-[19.6px] text-[#8D8D8D]">₹ ${item.price * item.inventory}</p>
+                        <p className="mt-2 text-[14px] md:text-[17px] leading-[24px] text-[#111111] mb-[10px]">{item.productName}</p>
+                        <p className="text-[14px] md:text-[15px] leading-[19.6px] text-[#8D8D8D]  mb-[5px]">Qty {item.inventory}</p>
+                        <p className="text-[14px] md:text-[15px] leading-[19.6px] text-[#8D8D8D]">₹ ${item.price * item.inventory}</p>
                     </div>
                 </div>
                 ))

@@ -13,17 +13,17 @@ const Help = () => {
     <div className="mt-[50px] mb-[50px]">
         <div>
             <h1 className="text-[32px] leading-[36px] text-[#111111] text-center mb-[20px]">GET HELP</h1>
-            <div className="flex items-center justify-center mb-[20px]">
-                <input className="w-[457.33px] h-[56px] rounded-[8px] border border-[#757575] px-[20px]" type="text"  placeholder="What can we help you with?"/>
-                <Image className="absolute left-[870px] cursor-pointer" src={searchIcon} alt="searchIcon" width={24} height={18}/>
+            <div className="flex items-center justify-center px-3 md:px-0 mb-[20px]">
+                <input className="w-[100%] md:w-[457.33px] h-[40px] md:h-[56px] rounded-[8px] border border-[#757575] px-[20px]" type="text"  placeholder="What can we help you with?"/>
+                <Image className="absolute left-[270px] md:left-[870px] cursor-pointer" src={searchIcon} alt="searchIcon" width={24} height={18}/>
             </div>
         </div>
-        <div className="w-[85%] m-auto flex gap-[50px] mt-[40px]">
-            <div className="w-[939.75px]">
-                <h1 className="text-[28px] leading-[32px] text-[#111111] mb-[20px] font-semibold">WHAT PAYMENT OPTIONS CAN I USE ON NIKE ORDERS?</h1>
+        <div className="w-[95%] md:w-[85%] m-auto flex flex-col md:flex-row gap-[50px] mt-[40px]">
+            <div className="px-2 md:px-0 md:w-[939.75px]">
+                <h1 className="text-[22px] md:text-[28px] leading-[32px] text-[#111111] mb-[20px] font-semibold">WHAT PAYMENT OPTIONS CAN I USE ON NIKE ORDERS?</h1>
                 <div>
                     <p className="text-[15px] leading-[28px] text-[#111111] mb-[20px]">We want to make buying your favourite Nike shoes and gear online fast and easy, and we accept the following payment options:</p>
-                    <div className="ml-[30px]">
+                    <div className="ml-[10px] md:ml-[30px]">
                         <p className="text-[16px] leading-[28px] text-[#111111] mb-[10px]">Visa, Mastercard, Diners Club, Discover, American Express, Visa Electron, Maestro</p>
                         <p className="text-[15px] leading-[28px] text-[#111111] mb-[10px]">If you enter your PAN information at checkout, you'll be able to pay for your order with PayTM or a local credit or debit card.</p>
                         <p className="text-[16px] leading-[28px] text-[#111111] mb-[10px]">Apple Pay</p>
@@ -61,7 +61,7 @@ const Help = () => {
                     </div>
                     <div>
                         <p className="text-[16px] leading-[28px] text-[#111111]">Was this answer helpful?</p>
-                        <div className="flex gap-[10px] mb-[10px]">
+                        <div className="flex gap-[10px] mt-2 mb-[10px]">
                             <Image className="cursor-pointer" src={thumbup} alt="thumbup" width={18.34} height={22.5}/>
                             <Image className="cursor-pointer" src={thumbdown} alt="thumbdown" width={18.34} height={22.5}/>
                         </div>
@@ -75,7 +75,7 @@ const Help = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-[313.25px]">
+            <div className="w-[100%] md:w-[313.25px]">
                 <h1 className="text-[28px] leading-[32px] text-[#111111] text-center mb-[30px]">CONTACT US</h1>
                 <div>
                     <div className="mb-[60px]">
@@ -84,7 +84,7 @@ const Help = () => {
                         </div>
                         <div>
                             <p className="text-[16px] leading-[24px] text-[#111111] text-center font-semibold">000 800 919 0566</p>
-                            <p className="text-[16px] leading-[28px] text-[#111111] w-[263.15px] text-center">Products & Orders: 24 hours a day, <br />7 days a week <br />Company Info & Enquiries: 07:30 - 16:30, Monday - Friday</p>
+                            <p className="text-[16px] leading-[28px] text-[#111111] w-[263.15px] text-center m-auto">Products & Orders: 24 hours a day, <br className="text-center" />7 days a week <br />Company Info & Enquiries: 07:30 - 16:30, Monday - Friday</p>
                         </div>
                     </div>
                     <div className="mb-[60px]">
