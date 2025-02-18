@@ -143,7 +143,7 @@ function Shop() {
 
 
         <div className="md:w-[1192px] w-[100%] px-1 md:px-0">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-0 px-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-0 px-4">
             {/* <div> */}
             {product.map((product) => (
               <div
