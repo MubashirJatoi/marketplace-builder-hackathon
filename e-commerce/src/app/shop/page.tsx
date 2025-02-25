@@ -24,7 +24,7 @@ function Shop() {
   }, []);
 
   return (
-    <div className="mt-[30px] md:mt-[50px]">
+    <div className="w-[100%] mt-[30px] md:mt-[50px]">
       <div className="flex justify-between items-start mb-[30px]">
         <h3 className="hidden md:block text-[18px] md:text-[24px] ml-[15px] md:ml-[30px] font-[600px] ">
           New (500)
@@ -45,7 +45,7 @@ function Shop() {
       <div className="flex flex-col md:flex-row">
         <div className="">
           <div className="md:flex hidden">
-            <div className="grid grid-cols-2 gap-3 md:gap-0 px-4 md:px-0 md:grid-cols-1 w-[100%] md:w-[260px] text-[15px] mb-[50px] md:ml-[30px] md:leading-[35px]">
+            <div className="grid grid-cols-2 gap-3 md:gap-0 px-4 md:px-0 md:grid-cols-1 w-[15%] md:w-[100%] text-[15px] mb-[50px] md:ml-[30px] md:leading-[35px]">
               <p className="cursor-pointer">Shoes</p>
               <p className="cursor-pointer">Sports Bras</p>
               <p className="cursor-pointer">Tops & T-Shirts</p>
@@ -142,7 +142,7 @@ function Shop() {
         </div>
 
 
-        <div className="md:w-[1192px] w-[100%] px-1 md:px-0">
+        <div className="md:w-[100%] w-[100%] px-1 md:px-0">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-0 px-4">
             {/* <div> */}
             {product.map((product) => (
@@ -180,7 +180,7 @@ function Shop() {
               </div>
             ))}
           </div>
-          <div className="w-[100%] px-20 md:px-0 md:w-[1000px] h-[64px] flex justify-center pt-[32px] mb-[3rem] md:mb-[100px]">
+          <div className="w-[100%] px-20 md:px-0 md:w-[100%] h-[64px] flex justify-center pt-[32px] mb-[3rem] md:mb-[100px]">
             <Image src={Circlee} alt="circlee"></Image>
           </div>
 
@@ -262,7 +262,7 @@ function Shop() {
             </div>
           </div>
         </div>
-          <div className="mb-[5rem] md:mb-[100px] px-1 md:px-0 mt-[2rem] md:mt[0rem]">
+          <div className="mb-[5rem] md:mb-[100px] px-1 mt-[2rem] md:mt[0rem] md:px-4">
             <h3 className="text-[19px] mb-[20px] leading-[24px] font-[600] px-1 md:px-0">
               Related Categories
             </h3>
